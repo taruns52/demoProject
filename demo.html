@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Form</title>
+
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+
+    <h1>Demo Form</h1>
+    <div id="container">
+        <div id="form-container">
+
+            <div> <label for="name"> Name:
+                    <input type="text" name="name" id="name"></label></div>
+
+
+            <div><label for="email"> Email:
+                    <input type="email" name="email" id="email"></label>
+            </div>
+
+            <div> <label for="gender">Gender: </label>
+
+                <label for="male">Male
+                    <input type="radio" name="gender" id="male"></label>
+
+                <label for="female">Female
+                    <input type="radio" name="gender" id="female">
+                </label>
+            </div>
+
+            <div> <label for="">Hobbies: </label>
+                <input type="checkbox" class="hobbies"   id="hobby1" name="hobby1" value="Singing">
+                <label for="hobby1"> Singing</label>
+                <input type="checkbox" class="hobbies" id="hobby2" name="hobby2" value="Coding">
+                <label for="hobby2"> Coding</label>
+                <input type="checkbox" class="hobbies" id="hobby3" name="hobby3" value="Sleeping">
+                <label for="hobby3"> Sleeping</label>
+            </div>
+
+            <div>
+                <label for=""> Age: </label>
+                <input type="range" min="1" max="100" id="age" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output>
+
+            </div>
+
+            <div>
+                <label for=""> State: </label>
+                <select name="state" id="state">
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Orissa">Orissa</option>
+                </select>
+                </label>
+            </div>
+
+            <div>
+                <label for=""> City: </label>
+                <select name="cities" id="cities" size="">
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit" id="submit">Save</button>
+            </div>
+        </div>
+
+
+
+        <div id="table-container">
+            <h2>Saved Data</h2>
+
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="demo.js"></script>
+</body>
+
+</html>
